@@ -1,0 +1,56 @@
+body {
+  width: 100%;
+  height: 1000px;
+}
+
+.slider {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 50%;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slider__track {
+  width: 100%;
+  height: 5px;
+  background-color: #cccccc;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.slider__thumb {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: blue;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.slider__ticks {
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  position: absolute;
+  left: -2%;
+  top: 15px;
+  width: 104%;
+  height: 10px;
+  outline: 1px solid red;
+  user-select: none;
+}
+
+.slider__tick {
+  /*position: absolute;*/
+  width: 100%;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+  color: #cccccc;
+}
